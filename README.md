@@ -1,6 +1,6 @@
 # katago-benchmark
 
-## 1.9.0 cuda
+## 1.9.0 cuda b40-s985
 
 | |  A100PCIE   | A30  | GTX1080TI  | GTX2080TI  | GTX3080  | GTX3090  | V100|
 |  ----  | ----  | ----  | ----  | ----  | ----  | ----  | ----  |
