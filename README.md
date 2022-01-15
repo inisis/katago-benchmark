@@ -11,7 +11,7 @@
 |  nnEvals/s | 3558  | 2212  | 425  | 1225  | 1376  | 1607  | 1784  | 1773 |
 
 
-## 1.9.0 tensorrt b40-s985
+## 1.10.0 tensorrt b40-s1080
 
 ```
 ./katago benchmark -config ../test.cfg  -model ../kata1-b40c256-s10800760064-d2633359377.bin.gz -v 5000 -t 32,48,64,80,96,112,128
