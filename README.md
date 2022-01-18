@@ -1,5 +1,7 @@
 # katago-benchmark
 
+nnEvals/s: the bigger the better
+
 ## 1.9.1 cuda b40-s985(cuda11.0)
 
 ```
