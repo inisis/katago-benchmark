@@ -1,3 +1,4 @@
+[中文版本](README_CH.md)
 # katago-benchmark
 
 nnEvals/s: the bigger the better
