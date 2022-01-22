@@ -1,7 +1,8 @@
 # katago-benchmark-docker
 
 ```
-docker run -it --rm --gpus all -v /path/to/your/weights:/katago/data -e USER_NAME=YOURUSERNAME -e USER_PASSWORD=YOURPASSWORD -e BACKEND=TENSORRT -e WEIGHTS=kata1-b40c256-s5341126656-d1285996791.bin.gz yaphets4desmond/katago:11.0.3-cudnn8-runtime-ubuntu18.04-tenosrrt8.0.0.3-opencl-stable
+docker run -itd --rm --name=KATAGO --gpus all -v /home/yao/work/data:/katago/data -e USER_NAME=desmond -e USER_PASSWORD=123456 -e BACKEND=CUDA -e WEIGHTS=kata1-b40c256-s5341126656-d1285996791.bin.gz -e LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64 yaphets4desmond/katago:11.0.3-cudnn8-runtime-ubuntu18.04-tenosrrt8.0.0.3-opencl-stable bash -c "cd /katago && ./run.sh"
+
 ```
 
 > * BACKEND can be CUDA, TENOSRRT or OPENCL
