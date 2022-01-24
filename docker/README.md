@@ -1,7 +1,7 @@
 # katago-benchmark-docker
 
 ```
-docker run -itd --rm --name=KATAGO --gpus all -v /home/yao/work/data:/katago/data -e USER_NAME=desmond -e USER_PASSWORD=123456 -e BACKEND=CUDA -e WEIGHTS=kata1-b40c256-s5341126656-d1285996791.bin.gz -e LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64 yaphets4desmond/katago:11.0.3-cudnn8-runtime-ubuntu18.04-tenosrrt8.0.0.3-opencl-stable bash -c "cd /katago && ./run.sh"
+docker run -itd --rm --name=KATAGO --gpus all -v /Your/Path/to/Weights:/katago/data -e USER_NAME=USER_NAME -e USER_PASSWORD=USER_PASSWORD -e BACKEND=CUDA -e WEIGHTS=kata1-b40c256-s5341126656-d1285996791.bin.gz -e LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64 yaphets4desmond/katago:11.0.3-cudnn8-runtime-ubuntu18.04-tenosrrt8.0.0.3-opencl-stable bash -c "cd /katago && ./run.sh"
 
 ```
 
