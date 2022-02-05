@@ -32,6 +32,6 @@ nnEvals/s: 数值越大代表性能越好
 ./katago benchmark -config ../test.cfg  -model ../kata1-b40c256-s10800760064-d2633359377.bin.gz -v 5000 -t 32,48,64,80,96,112,128
 ```
 
-| |  Mac Air M1   | 
-|  ----  |----  |
-|  nnEvals/s  | 93  |
+| |  A100PCIE   | GTX1080TI  | RTX2080TI | RTX3090  | V100 | V100S | Mac Air M1 |
+|  ----  | ----  | ----  | ----  | ----  | ----  | ----  | ----  |
+|  nnEvals/s  | 2230 | 315  | 1086 |  1959 | 1509  |  1634 | 93  |
